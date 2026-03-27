@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-nier-bg: #eceae3;
+  --color-nier-surface: #e2dfd5;
+  --color-nier-border: #c4c1b6;
+  --color-nier-text: #413f38;
+  --color-nier-dark: #2a2822;
+}
+
+@layer base {
+  body {
+    @apply bg-nier-bg text-nier-text antialiased selection:bg-nier-border selection:text-nier-dark;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-nier-bg/90 backdrop-blur-md border border-nier-border shadow-sm;
+  }
+  .glass-card {
+    @apply bg-nier-surface border border-nier-border hover:border-nier-dark/[0.4] transition-all duration-300 shadow-sm hover:shadow-md rounded-sm;
+  }
+  .text-gradient {
+    @apply text-nier-dark;
+  }
+}
