@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
+import { LinkButton } from '../ui/Button';
 
 export function Hero() {
   return (
@@ -17,7 +18,7 @@ export function Hero() {
           >
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-sm p-1 bg-nier-border mx-auto transition-transform duration-500 shadow-sm relative group overflow-hidden">
               <img 
-                src="https://github.com/pratik-singhh.png" 
+                src="/profile.png" 
                 alt="Pratik's Profile Picture" 
                 className="w-full h-full object-cover border border-nier-bg grayscale group-hover:grayscale-0 transition-all duration-700"
                 onError={(e) => {
@@ -70,23 +71,23 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <a
+            <LinkButton
               href="#projects"
-              className="inline-flex items-center justify-center gap-3 px-8 py-3 bg-nier-dark text-nier-bg text-sm uppercase tracking-widest hover:bg-[#1a1814] transition-all duration-300"
+              variant="primary"
             >
               View Projects
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </LinkButton>
             
-            <a
+            <LinkButton
               href={personalInfo.socials.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-8 py-3 bg-nier-surface text-nier-dark text-sm uppercase tracking-widest hover:bg-[#d0cec3] transition-all duration-300 border border-nier-border"
+              variant="secondary"
             >
               <FaGithub className="w-4 h-4" />
               GitHub Profile
-            </a>
+            </LinkButton>
           </motion.div>
         </div>
       </div>

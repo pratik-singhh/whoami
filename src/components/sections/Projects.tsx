@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { projects } from '../../data/portfolio';
+import { Badge } from '../ui/Badge';
 
 export function Projects() {
   return (
@@ -85,12 +86,9 @@ export function Projects() {
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tech.map(tech => (
-                    <span 
-                      key={tech} 
-                      className="px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-[#7a7870] bg-[#e6e4dc] border border-[#d6d4cc]"
-                    >
+                    <Badge key={tech} variant="small">
                       {tech}
-                    </span>
+                    </Badge>
                   ))}
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { techStack } from '../../data/portfolio';
+import { Badge } from '../ui/Badge';
 
 export function TechStack() {
   return (
@@ -34,9 +35,8 @@ export function TechStack() {
               viewport={{ once: true }}
               whileHover={{ y: -2 }}
               transition={{ duration: 0.2, delay: i * 0.02 }}
-              className="px-5 py-2 rounded-none border border-nier-border bg-nier-surface text-nier-dark text-sm tracking-wider hover:bg-nier-dark hover:text-nier-bg transition-all cursor-default uppercase"
             >
-              {tech}
+              <Badge variant="default">{tech}</Badge>
             </motion.div>
           ))}
         </div>

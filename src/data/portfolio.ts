@@ -1,4 +1,28 @@
-export const personalInfo = {
+export interface Socials {
+  github: string;
+  instagram: string;
+  letterboxd: string;
+}
+
+export interface PersonalInfo {
+  name: string;
+  role: string;
+  tagline: string;
+  bio: string;
+  email: string;
+  socials: Socials;
+}
+
+export interface Project {
+  title: string;
+  repo: string;
+  live: string;
+  description: string;
+  tech: string[];
+  highlights: string[];
+}
+
+export const personalInfo: PersonalInfo = {
   name: "Pratik",
   role: "Fullstack Developer",
   tagline: "React • TypeScript • Node.js",
@@ -11,12 +35,12 @@ export const personalInfo = {
   }
 };
 
-export const techStack = [
+export const techStack: string[] = [
   "React", "TypeScript", "JavaScript", "Node.js", "Express", "PostgreSQL",
   "HTML", "CSS", "TailwindCSS", "Git", "Linux", "Vite", "Vercel", "Railway"
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
     title: "Campus Event Management System (CEMS)",
     repo: "https://github.com/pratik-singhh/CEMS",
