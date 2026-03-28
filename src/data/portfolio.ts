@@ -51,7 +51,7 @@ export const projects: Project[] = [
   },
   {
     title: "TaskMaster – Fullstack Task Manager",
-    repo: "https://github.com/pratik-singhh/taskmaster",
+    repo: "https://github.com/pratik-singhh/Devtrack",
     live: "https://taskmaster-rho-two.vercel.app/",
     description: "Full-featured task management app with secure authentication and multi-user support.",
     tech: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "Tailwind CSS"],
@@ -75,7 +75,7 @@ export const projects: Project[] = [
   },
   {
     title: "Movie App",
-    repo: "https://github.com/pratik-singhh/movie-app",
+    repo: "https://github.com/pratik-singhh/Movie-Database-App",
     live: "",
     description: "Movie browser powered by external APIs with robust error handling and loading states.",
     tech: ["React", "Movie API", "Error Handling"],
