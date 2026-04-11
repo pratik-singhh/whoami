@@ -42,6 +42,14 @@ export const techStack: string[] = [
 
 export const projects: Project[] = [
   {
+    title: "Shigoto – Distributed Job Queue System",
+    repo: "https://github.com/pratik-singhh/Distributed-Job-Queue-System",
+    live: "N/A",
+    description: "A production-style distributed job queue system built with Node.js and Redis. Features fault-tolerant background processing, delayed scheduling, and distributed system design patterns.",
+    tech: ["Node.js", "TypeScript", "Redis", "Express"],
+    highlights: ["Distributed Architecture", "Exponential Backoff + Jitter", "Delayed Job Scheduling", "DLQ Support"]
+  },
+  {
     title: "Campus Event Management System (CEMS)",
     repo: "https://github.com/pratik-singhh/CEMS",
     live: "https://cems-six.vercel.app",
