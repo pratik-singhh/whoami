@@ -44,7 +44,7 @@ export const projects: Project[] = [
   {
     title: "Shigoto – Distributed Job Queue System",
     repo: "https://github.com/pratik-singhh/Distributed-Job-Queue-System",
-    live: "N/A",
+    live: "",
     description: "A production-style distributed job queue system built with Node.js and Redis. Features fault-tolerant background processing, delayed scheduling, and distributed system design patterns.",
     tech: ["Node.js", "TypeScript", "Redis", "Express"],
     highlights: ["Distributed Architecture", "Exponential Backoff + Jitter", "Delayed Job Scheduling", "DLQ Support"]
